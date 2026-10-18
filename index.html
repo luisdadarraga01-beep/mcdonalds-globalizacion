@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#c8102e">
+<title>McDonald’s: de lo local a lo global</title>
+<style>
+:root{--red:#c8102e;--yellow:#ffc72c;--cream:#fff8ed;--ink:#242020;--muted:#6c6662;--white:#fff;--line:#f0d98d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+a{color:var(--red)}.topline{height:8px;background:var(--red)}header{padding:22px max(22px,calc((100% - 1100px)/2));display:flex;justify-content:space-between;align-items:center;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900}.arches{font-size:40px;line-height:1;color:var(--yellow);text-shadow:1px 1px 0 #a00}
+.pill{background:#fff0c6;color:#6e1b24;padding:7px 12px;border-radius:999px;font-size:.82rem;font-weight:700}
+.hero{max-width:1100px;margin:10px auto 28px;padding:35px 26px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+.eyebrow{color:var(--red);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:.98;letter-spacing:-.045em;margin:14px 0 18px}
+h1 span{color:var(--red)}.lead{font-size:1.12rem;color:#554f4b;max-width:610px}
+.hero-art{min-height:300px;border-radius:32px;background:var(--red);color:white;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:25px}
+.hero-art:before{content:"";position:absolute;width:280px;height:280px;border:2px dashed rgba(255,255,255,.4);border-radius:50%;right:-45px;top:-65px}
+.bigM{font-size:clamp(9rem,22vw,15rem);font-weight:900;color:var(--yellow);line-height:1;text-shadow:0 5px 0 #9f1025;z-index:1}
+.food{position:absolute;bottom:20px;right:18px;font-size:2.2rem;filter:drop-shadow(0 5px 3px #7d0018)}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.btn{border:0;display:inline-block;text-decoration:none;padding:12px 17px;border-radius:12px;font-weight:800;cursor:pointer}.btn.primary{background:var(--red);color:white}.btn.secondary{background:white;color:var(--red);border:1px solid var(--line)}
+.wrap{max-width:1100px;margin:auto;padding:10px 22px 50px}.section-head{margin:32px 0 18px}.section-head h2{font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.1;margin:7px 0}.section-head p{color:var(--muted);max-width:720px;margin:8px 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid #f0e5ce;border-radius:20px;padding:22px;box-shadow:0 8px 24px rgba(70,35,10,.045)}.icon{width:48px;height:48px;border-radius:15px;background:#fff0c6;display:grid;place-items:center;font-size:1.55rem;margin-bottom:12px}.card h3{margin:4px 0 8px;font-size:1.15rem}.card p{margin:0;color:#5b5551}.tag{display:inline-block;background:#fff0c6;color:#7b2029;border-radius:8px;padding:4px 8px;font-size:.75rem;font-weight:800;margin-bottom:9px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{border-radius:22px;padding:24px;background:white;border:1px solid #f0e5ce}.panel.red{background:var(--red);color:white}.panel.red p{color:#fff1e8}.panel h3{font-size:1.3rem;margin:0 0 10px}.list{padding-left:20px;margin-bottom:0}.list li{margin:8px 0}
+.callout{background:#fff0c6;border-left:5px solid var(--yellow);padding:18px 20px;border-radius:12px;margin:18px 0;font-weight:700}
+.quiz{background:#241f1f;color:white;border-radius:24px;padding:26px}.quiz h2{margin-top:0}.answers{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}.answer{background:#fff;color:var(--ink);border:2px solid transparent;text-align:left;border-radius:12px;padding:13px;cursor:pointer;font-weight:700}.answer:hover,.answer:focus{border-color:var(--yellow)}#feedback{min-height:32px;margin-top:14px;color:#ffdc65;font-weight:700}
+footer{background:#211d1d;color:#f8eee4;padding:28px 22px;text-align:center}footer a{color:#ffdc65}.small{font-size:.85rem;color:var(--muted)}footer .small{color:#d5cbc3}
+@media(max-width:760px){header{padding:18px 20px}.hero{grid-template-columns:1fr;padding:18px 20px}.hero-art{min-height:220px}.bigM{font-size:10rem}.grid{grid-template-columns:1fr}.split{grid-template-columns:1fr}.answers{grid-template-columns:1fr}.wrap{padding-left:18px;padding-right:18px}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="brand"><span class="arches">M</span><span>GLOBALIZACIÓN<br><small>y negocios internacionales</small></span></div>
+  <span class="pill">MINI GUÍA INTERACTIVA</span>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div>
+    <div class="eyebrow">De lo local a lo global</div>
+    <h1>McDonald’s:<br><span>un mundo</span><br>de estrategias.</h1>
+    <p class="lead">¿Cómo logra una marca reconocible en tantos países conectar con culturas, gustos y mercados diferentes? Explora las claves detrás de su expansión global.</p>
+    <div class="ctas"><a class="btn primary" href="#explora">Explorar la guía ↓</a><a class="btn secondary" href="#quiz">Pon a prueba lo aprendido</a></div>
+  </div>
+  <div class="hero-art" aria-label="Ilustración gráfica de la marca"><div class="bigM">M</div><div class="food">🍔 🍟 🥤</div></div>
+</section>
+<div class="wrap">
+  <section id="explora">
+    <div class="section-head"><div class="eyebrow">01 · La idea principal</div><h2>Una marca global, muchos contextos</h2><p>La globalización conecta mercados, empresas, tecnologías y culturas. McDonald’s sirve como caso para analizar cómo una empresa expande su modelo y responde a realidades locales.</p></div>
+    <div class="grid">
+      <article class="card"><div class="icon">🌍</div><span class="tag">GLOBALIZACIÓN</span><h3>Conexión entre países</h3><p>El comercio, la inversión, la tecnología y las ideas conectan mercados y consumidores. Esto abre oportunidades, pero también aumenta la competencia.</p></article>
+      <article class="card"><div class="icon">🏪</div><span class="tag">INTERNACIONALIZACIÓN</span><h3>Crecer en otros mercados</h3><p>Es la estrategia de llevar actividades a otros países. Las franquicias y los operadores locales pueden facilitar la expansión y aportar conocimiento del mercado.</p></article>
+      <article class="card"><div class="icon">🎯</div><span class="tag">ESTRATEGIA</span><h3>Identidad + adaptación</h3><p>Una marca puede conservar elementos reconocibles y adaptar productos, comunicación u operaciones a las preferencias de cada país.</p></article>
+    </div>
+  </section>
+  <section>
+    <div class="section-head"><div class="eyebrow">02 · El equilibrio estratégico</div><h2>¿Estandarizar o adaptar?</h2><p>La respuesta más útil no suele ser escoger solo una. La empresa decide qué mantener consistente y qué ajustar a cada mercado.</p></div>
+    <div class="split">
+      <article class="panel"><h3>🟡 Estandarizar</h3><p>Mantener elementos similares para construir una experiencia de marca reconocible.</p><ul class="list"><li>Identidad visual y arcos dorados.</li><li>Estándares de higiene y seguridad alimentaria.</li><li>Procesos organizados de servicio y operación.</li></ul></article>
+      <article class="panel red"><h3>🍔 Adaptar</h3><p>Modificar ciertos elementos para responder a gustos, costumbres, normas o ingredientes locales.</p><ul class="list"><li>Opciones de menú según el mercado.</li><li>Publicidad y promociones locales.</li><li>Comprensión de hábitos culturales y de consumo.</li></ul></article>
+    </div>
+    <div class="callout">Glocalización = pensar globalmente y actuar de forma adecuada en el contexto local.</div>
+  </section>
+  <section>
+    <div class="section-head"><div class="eyebrow">03 · Mirada empresarial</div><h2>¿Qué hay detrás de una hamburguesa?</h2><p>La experiencia del cliente depende de una red coordinada de actividades, no solo de lo que sucede en el restaurante.</p></div>
+    <div class="grid">
+      <article class="card"><div class="icon">🤝</div><h3>Franquicias y socios</h3><p>Pueden aportar inversión, operación y conocimiento del mercado, bajo acuerdos y estándares de marca.</p></article>
+      <article class="card"><div class="icon">🚚</div><h3>Cadena de valor</h3><p>Proveedores → logística → restaurante → venta → cliente. Coordinar los eslabones ayuda a cuidar calidad, rapidez y costos.</p></article>
+      <article class="card"><div class="icon">📱</div><h3>Tecnología y competencia</h3><p>Aplicaciones, quioscos y pedidos digitales pueden facilitar el servicio. La empresa también compite con cadenas y negocios locales.</p></article>
+    </div>
+  </section>
+  <section>
+    <div class="section-head"><div class="eyebrow">04 · Análisis crítico</div><h2>Oportunidades y desafíos</h2></div>
+    <div class="split">
+      <article class="panel"><h3>✓ Posibles oportunidades</h3><ul class="list"><li>Empleo y actividad económica.</li><li>Oportunidades para proveedores y franquiciados.</li><li>Difusión de procesos, tecnología y estándares.</li></ul></article>
+      <article class="panel"><h3>! Retos que analizar</h3><ul class="list"><li>Competencia para negocios locales.</li><li>Debates sobre nutrición y hábitos de consumo.</li><li>Residuos, empaques y presión ambiental.</li></ul></article>
+    </div>
+    <p class="small">Los efectos dependen del contexto y de las prácticas de cada mercado. Esta guía resume temas para analizar, no pretende dar una evaluación definitiva de todos los países.</p>
+  </section>
+  <section>
+    <div class="section-head"><div class="eyebrow">05 · Conexión con Colombia</div><h2>Del mundo a nuestro mercado</h2><p>Para analizar McDonald’s en Colombia, observen qué mantiene de su identidad global y cómo compite con las preferencias, precios, hábitos y alternativas locales.</p></div>
+    <div class="grid">
+      <article class="card"><div class="icon">👥</div><h3>Consumidores</h3><p>¿A quién se dirige: familias, jóvenes, trabajadores o consumidores digitales?</p></article>
+      <article class="card"><div class="icon">📍</div><h3>Mercado</h3><p>¿Cómo influyen ubicación, precio, promociones, servicio y domicilios?</p></article>
+      <article class="card"><div class="icon">🔎</div><h3>Competencia</h3><p>¿Qué ofrecen las cadenas y restaurantes locales? ¿En qué se diferencia la experiencia?</p></article>
+    </div>
+  </section>
+  <section id="quiz">
+    <div class="quiz">
+      <div class="eyebrow" style="color:#ffdc65">06 · Reto rápido</div>
+      <h2>¿Qué estrategia conviene más?</h2>
+      <p>Si McDonald’s entra a un país con hábitos alimentarios diferentes, ¿qué sería lo más estratégico?</p>
+      <div class="answers">
+        <button class="answer" onclick="answer(false)">A. Mantener absolutamente todo igual.</button>
+        <button class="answer" onclick="answer(true)">B. Mantener su identidad y adaptar lo necesario.</button>
+        <button class="answer" onclick="answer(false)">C. Cambiar por completo la marca.</button>
+        <button class="answer" onclick="answer(false)">D. Ignorar la cultura local.</button>
+      </div>
+      <div id="feedback" aria-live="polite"></div>
+    </div>
+  </section>
+  <section>
+    <div class="section-head"><div class="eyebrow">Para seguir investigando</div><h2>Fuentes recomendadas</h2><p>Consulta fuentes primarias para verificar datos, productos actuales y cifras antes de citarlos en un trabajo académico.</p></div>
+    <div class="card">
+      <ul class="list">
+        <li><a href="https://corporate.mcdonalds.com/" target="_blank" rel="noopener">McDonald’s Corporation</a> — información corporativa e informes anuales.</li>
+        <li><a href="https://www.mcdonalds.com/" target="_blank" rel="noopener">Sitios oficiales de McDonald’s</a> — menús y productos por país.</li>
+        <li><a href="https://www.dane.gov.co/" target="_blank" rel="noopener">DANE</a> — estadísticas económicas y contexto colombiano.</li>
+        <li><a href="https://www.mincit.gov.co/" target="_blank" rel="noopener">Ministerio de Comercio, Industria y Turismo</a> — comercio y negocios internacionales.</li>
+      </ul>
+      <p class="small">Esta guía es un recurso educativo independiente para acompañar una conferencia académica; no es una publicación oficial de McDonald’s. Los productos y estrategias pueden variar por país y fecha.</p>
+    </div>
+  </section>
+</div>
+</main>
+<footer>
+  <div class="arches" style="font-size:48px">M</div>
+  <h2 style="margin:5px 0 0">¡Gracias por explorar!</h2>
+  <p>De lo local a lo global · Conferencia sobre McDonald’s y la globalización</p>
+  <p class="small">Recurso educativo creado para complementar la exposición.</p>
+</footer>
+<script>
+function answer(correct){
+ const f=document.getElementById('feedback');
+ if(correct){f.textContent='¡Exacto! La estrategia más sólida suele combinar una identidad global reconocible con adaptación a las necesidades locales.';}
+ else{f.textContent='No del todo. Piensa en un equilibrio: mantener lo que identifica a la marca y adaptar lo que el mercado necesita.';}
+}
+</script>
+</body>
+</html>
